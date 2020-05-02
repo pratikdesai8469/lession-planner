@@ -1,0 +1,374 @@
+{
+	"info": {
+		"_postman_id": "530d064d-65ae-4809-893c-db0226ffbd1f",
+		"name": "Lession Planning",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"email\": \"pratikdesai8469@gmail.com\",\n\t\"password\": \"12345678\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{LessionPlanning}}user/login",
+					"host": [
+						"{{LessionPlanning}}user"
+					],
+					"path": [
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Register",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\": \"pratik desai\",\n\t\"email\": \"pratikdesfghfhfghfghai8469@gmail.com\",\n\t\"password\": \"12345678\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{LessionPlanning}}user/register",
+					"host": [
+						"{{LessionPlanning}}user"
+					],
+					"path": [
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Edit Profile",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "SWl3YlNmZjBnNFdkV0lLYWwzQnpvZjhCVzNudUx4bkhFM29qZkNhTUxQWFBSV1kzYjQxdjdtcWs3RDRiMjdIY2xUZUF5MHp3SmhHcjFOTDU=5e6faaa5bc93c",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\": \"pratik desai\",\n\t\"email\": \"pratikdesai8469@gmail.com\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{LessionPlanning}}user/edit-profile",
+					"host": [
+						"{{LessionPlanning}}user"
+					],
+					"path": [
+						"edit-profile"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Verify OTP",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"otp\": \"261554\",\n\t\"email\": \"pratikdesai8469@gmail.com\"\n}"
+				},
+				"url": {
+					"raw": "{{LessionPlanning}}user/verify-otp",
+					"host": [
+						"{{LessionPlanning}}user"
+					],
+					"path": [
+						"verify-otp"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Forgot Password",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"email\": \"pratikdesai8469@gmail.com\"\n}"
+				},
+				"url": {
+					"raw": "{{LessionPlanning}}user/forgot-password",
+					"host": [
+						"{{LessionPlanning}}user"
+					],
+					"path": [
+						"forgot-password"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Change Password",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"email\": \"pratikdesai8469@gmail.com\",\n\t\"password\": \"12345678\"\n}"
+				},
+				"url": {
+					"raw": "{{LessionPlanning}}user/change-password",
+					"host": [
+						"{{LessionPlanning}}user"
+					],
+					"path": [
+						"change-password"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Resend OTP",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"otp\": \"254854\",\n\t\"email\": \"pratikdesai8469@gmail.com\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{LessionPlanning}}user/resend-otp",
+					"host": [
+						"{{LessionPlanning}}user"
+					],
+					"path": [
+						"resend-otp"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add Lession",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "TFdvYXBQQ1NQSHE3QVhYV2N6VjBtbzRjd3VBVE9wZkM0dUdpcDRqUktGbGxKM3U2WHJVaE5jNXQ4dmtQNU5WSVl4UWFwbmhFTzJ6cTJXazY=5e7325a25a32d",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"unit_title\": \"lession\",\n    \"objective\": \"objective\",\n    \"standard\": \"standard\",\n    \"standard_duration\": \"standard_duration\",\n    \"starter\": \"starter\",\n    \"starter_duration\": \"starter_duration\",\n    \"mini_lession\": \"mini_lession\",\n    \"mini_lession_duration\": \"mini_lession_duration\"\n}"
+				},
+				"url": {
+					"raw": "{{LessionPlanning}}lession/add",
+					"host": [
+						"{{LessionPlanning}}lession"
+					],
+					"path": [
+						"add"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Edit Lession",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "TDR2cnc1MW80cFhuVHFhVTVoQ2ZGYkxqWkJrZ1hCdGNNTmJzeHlGWFlyb3NDWENMNnBEU3VVTDhscVFhTlBoSExObThuN3pqZ3U1NmZ4cG8=5e719884ebd6a",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"id\": 2,\n\t\"unit_title\": \"lession\",\n    \"objective\": \"objective\",\n    \"standard\": \"standard\",\n    \"standard_duration\": \"standard_duration\",\n    \"starter\": \"starter\",\n    \"starter_duration\": \"starter_duration\",\n    \"mini_lession\": \"mini_lession\",\n    \"mini_lession_duration\": \"mini_lession_duration\"\n}"
+				},
+				"url": {
+					"raw": "{{LessionPlanning}}lession/edit",
+					"host": [
+						"{{LessionPlanning}}lession"
+					],
+					"path": [
+						"edit"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "View Lession",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "TDR2cnc1MW80cFhuVHFhVTVoQ2ZGYkxqWkJrZ1hCdGNNTmJzeHlGWFlyb3NDWENMNnBEU3VVTDhscVFhTlBoSExObThuN3pqZ3U1NmZ4cG8=5e719884ebd6a",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{LessionPlanning}}lession/view/2",
+					"host": [
+						"{{LessionPlanning}}lession"
+					],
+					"path": [
+						"view",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Lession List",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "TDR2cnc1MW80cFhuVHFhVTVoQ2ZGYkxqWkJrZ1hCdGNNTmJzeHlGWFlyb3NDWENMNnBEU3VVTDhscVFhTlBoSExObThuN3pqZ3U1NmZ4cG8=5e719884ebd6a",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{LessionPlanning}}lession",
+					"host": [
+						"{{LessionPlanning}}lession"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Logout",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "QTJZSVB4anJEc2NGelpvZnlkSkVyQ0RDb3RGeklycDRjSDNXemJLYWZramIxWnJ6R3BxZWZrM3dBd1h6ZHFtdHl6dmpRWkYzT0IxY1ZhZ28=5e724b32a0c2f",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{LessionPlanning}}user/logout",
+					"host": [
+						"{{LessionPlanning}}user"
+					],
+					"path": [
+						"logout"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
